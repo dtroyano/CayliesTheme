@@ -15,7 +15,7 @@
 			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a></h1>
 				<p id="site-description"><?php bloginfo( 'description' ) ?></p>
 			<nav>				
-				<?php wp_nav_menu( array( 'menu' => 'Main Menu' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'main_nav', 'after' => '<span>&nbsp;&nbsp;//&nbsp;&nbsp;</span>' ) ); ?>
 			</nav>
 		</header>
 		<div id="main-content">

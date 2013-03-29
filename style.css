@@ -63,11 +63,26 @@ header nav {
 	font-weight: bold;
 	text-align: center;
 	color: #D8EEFB;
+	padding-right: 20px;
 }
 
 header a {
 	color: #88C9EE;
 	text-decoration: none;
+}
+
+header ul {
+	display: inline-block;
+	margin: 0px auto;
+	list-style-type: none;	
+}
+
+header li {
+	float: left
+}
+
+header li:last-child span{
+	display: none;
 }
 /*	MAIN-CONTENT  */
 #main-content {
@@ -87,7 +102,7 @@ header a {
 	border-radius: 2em;
 }
 
-h2 {
+.post h2 {
 	background: #AAAAFF;
 	font: bold 2em Gabriela;
 	padding: 0 0 0 1em;
@@ -95,25 +110,29 @@ h2 {
 	background: -moz-linear-gradient(left,  #AAAAFF,  #88C9EE);
 }
 
-h2 a {
+.post h2 a {
 	text-decoration: none;
 	color: black;
 }
 
-.post .comments {
-	background: url(images/comment.png) no-repeat;
-	width: 70px;
-	height: 70px;
-	background-size: contain;
+.post .comment-wrap {
 	float: right;
-	margin: -5em 2em 0 0;
-}
-
-.post .comments a {
+	padding-right: 20px;
 	text-decoration: none;
 }
 
+.post .comments {
+	background: url(images/comment.png) no-repeat;
+	background-size: contain;
+	width: 70px;
+	height: 60px;
+	margin: -5em 0 0 0;
+
+}
+
 .post .commentnum {
+	padding-right: 10px;
+
 	font: bold 1.5em Gabriela;
 	text-align: center;
 	color: black;
@@ -121,13 +140,14 @@ h2 a {
 }
 
 .post .author {
-	font: .8em Princess Sofia;
+	font: 1em Princess Sofia;
 	color: #2E2E2E;
 	margin: -2.5em 0 0 4em;
 }
 
 .post .date {
 	color: #2E2E2E;
+	font-size: 1.1em;
 	float: right;
 	text-align: right;
 	margin: -1em .3em 0 0;
@@ -164,6 +184,11 @@ h2 a {
 }
 
 #sidebar-wrap {
+	padding-left: 1em;
+	list-style-type: none;
+}
+
+#sidebar-wrap h2 {
 }
 /*	FOOTER  */
 #footer {
