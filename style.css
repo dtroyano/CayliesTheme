@@ -71,6 +71,10 @@ header a {
 	text-decoration: none;
 }
 
+header a:hover {
+	color: #c4c6e0;
+}
+
 header ul {
 	display: inline-block;
 	margin: 0px auto;
@@ -87,8 +91,8 @@ header li:last-child span{
 /*	MAIN-CONTENT  */
 #main-content {
 	float: left;
-	width: 60%;
-	padding: 0 0 150px 10%;
+	width: 50%;
+	padding: 0 5% 150px 10%;
 }
 .post {
 	margin: 2em 0;
@@ -102,7 +106,7 @@ header li:last-child span{
 	border-radius: 2em;
 }
 
-.post h2 {
+.post h2 a{
 	background: #AAAAFF;
 	font: bold 2em Gabriela;
 	padding: 0 0 0 1em;
@@ -168,10 +172,38 @@ header li:last-child span{
 	text-decoration: none;
 	color: #2E2E2E;
 }
+
+#edit a{
+	margin-left: 50px;
+	text-decoration: none;
+    background-color: #ffafd4;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+   	font: bold 1.2em Gabriela, serif;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 20px;
+}
+
+#edit a:active{
+    border-top: 1px solid #333333;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #333333;	
+}
+
 /* COMMENTS */
+
+#comments-closed {
+	text-align: center;
+	color: #2E2E2E;	
+}
 
 #respond p {
 	margin: -1.5em 0 0 3em;
+	padding: 5px;
 }
 
 #respond #comment {
@@ -179,8 +211,7 @@ header li:last-child span{
 }
 
 #respond #submit {
-	margin-left: 3em;
-	margin-bottom: 1em;
+	margin: 5px 0 1em 3em;
 	background-color: #ffafd4;
 	font: bold 1.2em Gabriela, serif;
 	border-radius: 20px;
@@ -192,27 +223,26 @@ header li:last-child span{
 }
 
 /*	SIDEBAR  */
-#sidebar {
+#sidebar-wrap {
 	float: right;
-	width: 20%;
-	margin: 30px 5% 0 0;
+	width: 35%;
+	margin-top: 50px;
 	height: 100%;
 }
 
-#end_overlay{
-    width: 100%;
+.sidebar-back{
+	width: 30%;
     box-shadow: 0px 0px 20px 20px rgba(216,238,251,.4);
    	background: rgba(216,238,251,.4);
-    z-index: 5;    
+    float: left;
+    margin: 0 30px 0 30px;
 }
 
-#sidebar-wrap {
-	padding-left: 1em;
+.sidebar {
+	
 	list-style-type: none;
 }
 
-#sidebar-wrap h2 {
-}
 /*	FOOTER  */
 #footer {
 	position: absolute;

@@ -12,8 +12,12 @@
 
     if ( function_exists('register_sidebar') ) {
         register_sidebar(array(
-            'name' => 'Right Sidebar',
+            'name' => 'Right Sidebar1',
             'id' => 'sidebar1'
+            ));
+        register_sidebar(array(
+            'name' => 'Right Sidebar2',
+            'id' => 'sidebar2'
             ));
     }
 
